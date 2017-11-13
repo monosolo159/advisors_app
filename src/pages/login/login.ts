@@ -1,24 +1,19 @@
 import { Component } from '@angular/core';
-$IMPORTSTATEMENT
+import { NavController } from 'ionic-angular';
 
-/**
- * Generated class for the Login page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-$IONICPAGE
 @Component({
   selector: 'page-login',
-  templateUrl: 'login.html',
+  templateUrl: 'login.html'
 })
-export class Login {
+export class LoginPage {
+  public username;
+  public password;
+  constructor(public navCtrl: NavController) {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Login');
+  login(){
+    console.log('asdasd');
   }
 
 }
